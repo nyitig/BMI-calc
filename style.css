@@ -61,6 +61,7 @@
   margin-top: 2vh;
 }
 .widhtfull {
+  min-width: 300px;
   max-width: 560px;
 }
 .widhthalf {
@@ -91,6 +92,12 @@
 .boxStyle {
   margin-top: 3vh;
   padding: 3vh 5vw;
+  border-radius: 6px;
+  text-align: center;
+}
+.boxStyleMeasures {
+  margin-top: 3vh;
+  padding: 1vh 1vw;
   border-radius: 6px;
   text-align: center;
 }
@@ -139,6 +146,9 @@ body {
   margin: 5vh auto;
   padding: 3vh 3vw;
   border-radius: 6px;
+}
+.h2Widht {
+  width: 155px;
 }
 #resultDivCont {
   width: 100%;
