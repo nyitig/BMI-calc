@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Egyszerű BMI Calculator</title>
+</head>
+<body>
+  <section id="FullBodySect" class="">
+    <div id="fullBodyDivContainer" class="displaxFlexColumn alignCent boxShadow">
+      <header>
+        <div id="headerdivCont" class="displaxFlexColumn alignCent marginH boxShadow boxStyle widhtfull">
+          <h1 class="fontofH1 fontColorLight">Egyszerű BMI számoló</h1>
+        </div>
+      </header>
+      <form  class="widhtfull">
+        <div id="genreInputDivCont" class=" displaxFlexRow widhtfull wrap justySpAr">
+          <div id="manBox" data-gender="man" class="displaxFlexColumn alignCent justyCent boxShadow boxStyle widhthalf clickBox marginRight2vw">
+            <input type="radio" name="gender" id="manInput" class="hide">
+            <span class="fontofH1 span">Férfi</span>
+          </div>
+          <div id="womanBox" data-gender="woman" class="displaxFlexColumn alignCent justyCent boxShadow boxStyle widhthalf clickBox">
+            <input type="radio" name="gender" id="womanInput" class="hide">
+            <span class="fontofH1 span">Nő</span>
+          </div>
+
+        </div>
+        <div id="measuresDivCont" class="marginH displaxFlexRow widhtfull wrap justySpAr">
+          <div id="heighDivCont" class="displaxFlexRow alignCent justySpEv boxShadow boxStyle widhthalfInput clickBox marginRight2vw">
+            <input type="range" name="height" id="heightInput" class="" min="120" max="250" step="1" value="">
+            <h2 id="heightH2" class="fontofH margintopH">185 cm</h2>
+          </div>
+          <div id="weightDivCont" class="displaxFlexRow alignCent justySpEv boxShadow boxStyle widhthalfInput clickBox">
+            <input type="range" name="weight" id="weightInput" class="" min="40" max="200" step="1" value="">
+            <h2 id="weightH3" class="fontofH margintopH">120 kg</h2>
+          </div>
+        </div>
+        <div id="calcButtonDivCont" class="displaxFlexColumn alignCent marginH boxShadow boxStyle widhtfull">
+          <div id="calcButton" class="fontofH1 boxShadow">Számold ki!</div>
+        </div>
+      </form>
+      <div id="resultDivCont" class="displaxFlexColumn alignCent marginH boxShadow boxStyle">
+        <div id="resultBMIDivCont" class="displaxFlexColumn alignCent marginH boxShadow boxStyle widhtfull">
+           <p id="resultBMI" class="fontofH1 fontColorLight widhtfull">A BMI értéked:</p>
+        </div>
+        <div id="resultBMIDivCont" class="displaxFlexColumn alignCent marginH boxShadow boxStyle widhtfull">
+          <p id="resultBMINum" class="fontofOther fontColorLight marginH">35,06</p>
+          <p id="resultBMIText" class="fontofOther fontColorLight">Normál testsúly</p>
+        </div>
+       
+      </div>
+      <footer>
+        <div id="copyrightDivCont" class="marginH">
+          <h5 id="fontCopyright" class="fontofH marginH">This page use Merriweather fonts. 
+            Copyright 2016 The Merriweather Project Authors 
+            (<a href="https://github.com/EbenSorkin/Merriweather" target="_blank">https://github.com/EbenSorkin/Merriweather</a>), with Reserved Font Name "Merriweather".</h5>
+        </div>
+      </footer>
+    </div>
+
+  </section>
+  
+  <script src="app.js"></script>
+</body>
+</html>
